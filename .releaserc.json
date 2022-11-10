@@ -1,0 +1,37 @@
+{
+  "release": {
+    "branches": ["main"]
+  },
+  "verifyConditions": [
+    {
+      "path": "semantic-release-chrome",
+      "extensionId": "mcclikmfcmcpejkaobpfkmmbekbhedoi"
+    },
+    "@semantic-release/github"
+  ],
+  "prepare": [
+    {
+      "path": "semantic-release-chrome",
+      "distFolder": "build",
+      "asset": "fastmail-open-in-new-tab.zip"
+    }
+  ],
+  "publish": [
+    {
+      "path": "@semantic-release/github",
+      "assets": [
+        {
+          "path": "fastmail-open-in-new-tab.zip"
+        }
+      ]
+    }
+  ],
+  "analyzeCommits": {
+    "releaseRules": [
+      {
+        "scope": "manifest",
+        "release": "patch"
+      }
+    ]
+  }
+}

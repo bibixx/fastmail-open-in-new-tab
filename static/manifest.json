@@ -1,0 +1,15 @@
+{
+  "name": "Emails in New Window for Fastmail",
+  "description": "Open emails in a new window in Fastmail",
+  "version": "0.0.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://fastmail.com/*",
+        "https://betaapp.fastmail.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "manifest_version": 3
+}
