@@ -1,10 +1,6 @@
 {
   "branches": ["main"],
   "verifyConditions": [
-    {
-      "path": "semantic-release-chrome",
-      "extensionId": "mcclikmfcmcpejkaobpfkmmbekbhedoi"
-    },
     "@semantic-release/github"
   ],
   "prepare": [
